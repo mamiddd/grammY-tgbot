@@ -6,7 +6,7 @@ import bot from "./bot.ts";
 const handleUpdate = webhookCallback(bot, "std/http");
 
 serve({
-  ["/" + Deno.env.get("TOKEN")]: async (req) => {
+  ["/" + Deno.env.get("5461061229:AAHYh4UkZCIwMOky_gJ7iZZ1ImDc-LS0mYw")]: async (req) => {
     if (req.method == "POST") {
       try {
         return await handleUpdate(req);
